@@ -1,7 +1,13 @@
 {
   "item.shaking_of_spirits.trapped_soul": "Trapped Soul",
+  "item.shaking_of_spirits.soul_shard": "Soul Shard",
 
   "block.shaking_of_spirits.trapped_soul_block": "Block of Trapped Soul",
-
+  "item.shaking_of_spirits.metal_detector": "Metal Detector",
+  "item.shaking_of_spirits.soul_collector": "Soul Collector",
+  "item.shaking_of_spirits.ghost_helmet": "Ghost Helmet",
+  "item.shaking_of_spirits.ghost_chestplate": "Ghost Chestplate",
+  "item.shaking_of_spirits.ghost_leggings": "Ghost Leggings",
+  "item.shaking_of_spirits.ghost_boots": "Ghost Boots",
   "creativetab.shaking_of_spirits_tab": "Shaking of Spirits Tab"
 }

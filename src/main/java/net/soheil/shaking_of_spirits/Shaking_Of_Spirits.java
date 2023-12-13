@@ -1,6 +1,9 @@
 package net.soheil.shaking_of_spirits;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.IForgeRegistry;
 import net.soheil.shaking_of_spirits.block.ModBlocks;
 import net.soheil.shaking_of_spirits.item.ModCreativeModTabs;
 import net.soheil.shaking_of_spirits.item.ModItems;
@@ -37,6 +40,10 @@ public class Shaking_Of_Spirits {
         modEventBus.addListener(this::addCreative);
     }
 
+    public static <Attribute> DeferredRegister<Attribute> makeRegistry(IForgeRegistry<Attribute> registry) {
+        return DeferredRegister.create(registry, MOD_ID);
+    }
+
     private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
@@ -44,6 +51,7 @@ public class Shaking_Of_Spirits {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.TRAPPED_SOUL);
+            event.accept(ModItems.SOUL_SHARD);
         }
     }
 

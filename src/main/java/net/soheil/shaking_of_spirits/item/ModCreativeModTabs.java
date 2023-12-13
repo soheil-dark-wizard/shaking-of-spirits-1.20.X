@@ -21,6 +21,12 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.TRAPPED_SOUL.get());
 
                         pOutput.accept(ModBlocks.TRAPPED_SOUL_BLOCK.get());
+                        pOutput.accept(ModItems.SOUL_SHARD.get());
+                        pOutput.accept(ModItems.GHOST_HELMET.get());
+                        pOutput.accept(ModItems.GHOST_CHESTPLATE.get());
+                        pOutput.accept(ModItems.GHOST_LEGGINGS.get());
+                        pOutput.accept(ModItems.GHOST_BOOTS.get());
+
 
                     })
                     .build());

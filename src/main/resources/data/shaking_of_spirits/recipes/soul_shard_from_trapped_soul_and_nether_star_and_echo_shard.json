@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "*#*",
+    "#+#",
+    "*#*"
+  ],
+  "key": {
+    "#": {
+      "item": "shaking_of_spirits:trapped_soul"
+    },
+    "*": {
+      "item": "minecraft:nether_star"
+    },
+    "+": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "item": "shaking_of_spirits:soul_shard"
+  }
+}
