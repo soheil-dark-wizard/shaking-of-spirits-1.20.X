@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "shaking_of_spirits:trapped_soul_block"
+    }
+  ],
+  "result": {
+    "item": "shaking_of_spirits:trapped_soul",
+    "count": 9
+  }
+}

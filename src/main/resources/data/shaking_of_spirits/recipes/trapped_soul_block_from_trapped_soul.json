@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "shaking_of_spirits:trapped_soul"
+    }
+  },
+  "result": {
+    "item": "shaking_of_spirits:trapped_soul_block"
+  }
+}

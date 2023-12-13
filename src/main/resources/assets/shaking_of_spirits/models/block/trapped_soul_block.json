@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "shaking_of_spirits:block/trapped_soul_block"
+  }
+}
