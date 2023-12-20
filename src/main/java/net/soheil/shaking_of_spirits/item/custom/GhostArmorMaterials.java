@@ -10,7 +10,7 @@ import net.soheil.shaking_of_spirits.item.ModItems;
 
 import java.util.function.Supplier;
 
-public enum ModArmorMaterials implements ArmorMaterial {
+public enum GhostArmorMaterials implements ArmorMaterial {
     SOUL_SHARD("soul_shard", -1, new int[]{3, 5, 4, 3}, 25,
             SoundEvents.ARMOR_EQUIP_DIAMOND,1f, 0.5f, () -> Ingredient.of(ModItems.SOUL_SHARD.get()));
 
@@ -26,7 +26,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     private static final int[] BASE_DURABILITY = {11, 16, 16 ,13};
 
-    ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+    GhostArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;
