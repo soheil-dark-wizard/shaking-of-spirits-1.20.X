@@ -3,25 +3,25 @@ package net.soheil.shaking_of_spirits.mana;
 import net.minecraft.nbt.CompoundTag;
 
 public class PlayerMana {
-    private int mana;
-    private final int MIN_MANA = 0;
-    private final int MAX_MANA = 20;
+    private static int mana;
+    private static final int MIN_MANA = 0;
+    private static final int MAX_MANA = 20;
 
-    public int getMana(){
+    public static int getMana(){
         return mana;
     }
 
-    public void addMana(int add) {
-        this.mana = Math.min(mana + add, MAX_MANA);
+    public static void addMana(int add) {
+        mana = Math.min(mana + add, MAX_MANA);
     }
 
 
-    public void subMana(int sub) {
-        this.mana = Math.max(mana - sub, MIN_MANA);
+    public static void subMana(int sub) {
+        mana = Math.max(mana - sub, MIN_MANA);
     }
 
     public void copyFrom(PlayerMana source){
-        this.mana = source.mana;
+        mana = source.mana;
     }
 
     public void saveNBTData(CompoundTag nbt) {
