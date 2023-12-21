@@ -45,27 +45,12 @@ public class ModEvents {
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
         if (event.side == LogicalSide.SERVER) {
             event.player.getCapability(PlayerManaProvider.PLAYER_MANA).ifPresent(mana -> {
-                if (mana.getMana() < 20 && event.player.getRandom().nextFloat() < 0.005f) {
+                if (mana.getMana() < 20 && event.player.getRandom().nextFloat() < 0.004f) {
                     mana.addMana(1);
                     event.player.sendSystemMessage(Component.literal("mana :" + mana.getMana()));
+                    event.player.sendSystemMessage(Component.literal("mana add tracked"));
                 }
             });
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

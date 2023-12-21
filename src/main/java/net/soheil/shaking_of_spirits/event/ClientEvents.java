@@ -8,6 +8,8 @@ import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.soheil.shaking_of_spirits.Shaking_Of_Spirits;
+import net.soheil.shaking_of_spirits.networking.ModMessages;
+import net.soheil.shaking_of_spirits.networking.packet.ExamoleC2SPacket;
 import net.soheil.shaking_of_spirits.util.KeyBinding;
 
 public class ClientEvents {
@@ -18,9 +20,9 @@ public class ClientEvents {
             event.register(KeyBinding.BLACK_HOLE_KEY);
         }
         @SubscribeEvent
-        private static void onKeyInput(InputEvent event){
+        public static void onKeyInput(InputEvent event){
             if (KeyBinding.BLACK_HOLE_KEY.consumeClick()){
-                Minecraft.getInstance().player.sendSystemMessage(Component.literal("pressed key!"));
+                ModMessages.sendToServer(new ExamoleC2SPacket());
             }
         }
     }
